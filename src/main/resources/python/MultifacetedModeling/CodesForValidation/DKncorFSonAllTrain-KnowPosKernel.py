@@ -6,6 +6,9 @@ import ast
 import io
 import os
 import json
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)  # 上一层目录
+grandparent_dir=os.path.dirname(parent_dir)#上上一层次目录
 from Training import Data, load_data, FS_test
 import urllib.parse
 from pathlib import Path

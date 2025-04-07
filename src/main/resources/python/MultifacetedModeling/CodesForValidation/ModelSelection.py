@@ -56,4 +56,3 @@ if __name__ == '__main__':
             wb = '../Results/OnTrain/KnowledgeKernel/' + name[0] + '/' + str(i) + '.xlsx'
             dims = np.hstack((x, [45]))
             model_selection(all_data[:, dims], all_train_indices, test_indices, name, wb, partitions)
-    print("测试成功")

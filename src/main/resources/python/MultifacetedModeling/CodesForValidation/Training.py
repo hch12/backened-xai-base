@@ -6,7 +6,9 @@ import sys
 import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)  # 上一层目录
-
+grandparent_dir=os.path.dirname(parent_dir)#上上一层次目录
+sys.path.append(parent_dir)
+sys.path.append(grandparent_dir)
 from Printting import create_directory, create_workbook, save_to_excel_1d
 from FeatureSelection.DncorCal import DataDrivenNCOR
 from FeatureSelection.MBPSO import BPSO
@@ -14,6 +16,7 @@ from ModelsCV import predictors
 import time
 import copy
 import warnings
+
 warnings.filterwarnings('ignore')
 
 
